@@ -1,0 +1,15 @@
+.PokeCard{
+    border: 10px solid white;
+    border-radius: 10px;
+    min-height: 300px;
+}
+
+.PokeCard img {
+    max-width: 150px;
+}
+
+.PokeCard h1 {
+    color: blue;
+    font-weight: 100;
+}
+
