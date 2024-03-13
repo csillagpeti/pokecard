@@ -5,13 +5,15 @@ import LoginForm from "./LoginForm"
 import Die from './Die'
 import DiceRoll from './DiceRoll'
 import RandomPokemon from './RandomPokemon'
+import DoubleDice from './DoubleDice'
 
 function App() {
   return (
     <>
-      <div className="card">
-      <RandomPokemon/>
-      </div>
+      <Greeter person="Bob"/>
+      <DoubleDice />
+      <DoubleDice />
+      <DoubleDice />
     </>
   )
 }
