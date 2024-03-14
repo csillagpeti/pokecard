@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div className="card">
-      <RandomPokemon/>
+      <Greeter name="Lajos"/>
       </div>
     </>
   )
