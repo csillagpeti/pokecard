@@ -1,3 +1,4 @@
-export default function Greeter({name="World"}){
-    return <h1>Hello {name}!</h1>;
+export default function Greeter(props) {
+  const { person: name } = props;
+  return <h1>Hello {name}!</h1>;
 }
