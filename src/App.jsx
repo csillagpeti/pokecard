@@ -13,6 +13,9 @@ import ShoppingList from './ShoppingList'
 import PropertyList from './PropertyList'
 import Clicker from './Clicker'
 import Form from './Form'
+import Counter from './Counter'
+import Toggler from './Toggler'
+import ToggleCounter from './ToggleCounter'
 
 const data = [
   { id: 1, item: 'eggs', quantity: 12, completed: false },
@@ -50,9 +53,12 @@ function App() {
       <ShoppingList items={data}/>
       <PropertyList props={properties}/>
       <Clicker />
-      <Form /> */}
+      <Form />
       <Clicker message="HI!!!" buttonText="Click me" />
       <Clicker message="Please Stop Clicking Me!" buttonText="Do Not Click" />
+      <Counter />
+      <Toggler /> */}
+      <ToggleCounter />
     </>
   )
 }
