@@ -1,11 +1,15 @@
-function ShoppingListItem({item, quantity, completed}) {
+function ShoppingListItem({key, item, quantity, completed}) {
   return (
-    <li
-      style={{
-        color: completed ? "grey" : "white", textDecoration: completed && "line-through"
-      }}>
-      {item} - {quantity}
-    </li>
+    <>
+      <ul>
+        <li key={key}
+          style={{
+            color: completed ? "grey" : "white", textDecoration: completed && "line-through"
+          }}>
+          {item} - {quantity}
+        </li>
+      </ul>
+    </>
   )
 }
 
