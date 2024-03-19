@@ -16,6 +16,43 @@ import Form from './Form'
 import Counter from './Counter'
 import Toggler from './Toggler'
 import ToggleCounter from './ToggleCounter'
+import ColorBoxGrid from './ColorBoxGrid'
+
+
+function App() {
+  return (
+    <>
+    <ColorBoxGrid
+      colors={colors}/>
+    </>
+  )
+}
+
+export default App
+
+/* Available components in the sandbox:
+<Greeter person="Bob"/>
+<LoginForm />
+<Die />
+<DiceRoll />
+<RandomPokemon />
+<Heading color="Teal"/>
+<Heading text="Hello" color="yellow" fontSize="40px"/>
+<DoubleDice />
+<DoubleDice />
+<DoubleDice />
+<ColorList colors={["red", "blue", "teal", "orange"]} />
+<Slots val1="🍒" val2="🍒" val3 = "🍒"/>
+<Slots val1="🍒" val2="🍐" val3 = "🍌"/>
+<ShoppingList items={data}/>
+<PropertyList props={properties}/>
+<Clicker />
+<Form />
+<Clicker message="HI!!!" buttonText="Click me" />
+<Clicker message="Please Stop Clicking Me!" buttonText="Do Not Click" />
+<Counter />
+<Toggler />
+<ToggleCounter /> */
 
 const data = [
   { id: 1, item: 'eggs', quantity: 12, completed: false },
@@ -34,33 +71,37 @@ const properties = [
   { id: 129035, name: "Gold Miner Campground", rating: 4.69, price: 96 },
 ];
 
-function App() {
-  return (
-    <>
-      {/* <Greeter person="Bob"/>
-      <LoginForm />
-      <Die />
-      <DiceRoll />
-      <RandomPokemon />
-      <Heading color="Teal"/>
-      <Heading text="Hello" color="yellow" fontSize="40px"/>
-      <DoubleDice />
-      <DoubleDice />
-      <DoubleDice />
-      <ColorList colors={["red", "blue", "teal", "orange"]} />
-      <Slots val1="🍒" val2="🍒" val3 = "🍒"/>
-      <Slots val1="🍒" val2="🍐" val3 = "🍌"/>
-      <ShoppingList items={data}/>
-      <PropertyList props={properties}/>
-      <Clicker />
-      <Form />
-      <Clicker message="HI!!!" buttonText="Click me" />
-      <Clicker message="Please Stop Clicking Me!" buttonText="Do Not Click" />
-      <Counter />
-      <Toggler /> */}
-      <ToggleCounter />
-    </>
-  )
-}
-
-export default App
+const colors = [
+  "crimson",
+  "darkorange",
+  "limegreen",
+  "mediumseagreen",
+  "cornflowerblue",
+  "darkorchid",
+  "saddlebrown",
+  "firebrick",
+  "seagreen",
+  "royalblue",
+  "mediumpurple",
+  "darkslategray",
+  "salmon",
+  "darkgoldenrod",
+  "skyblue",
+  "orchid",
+  "darkcyan",
+  "steelblue",
+  "peru",
+  "tomato",
+  "darkviolet",
+  "indianred",
+  "forestgreen",
+  "chocolate",
+  "darkblue",
+  "dodgerblue",
+  "darkred",
+  "sienna",
+  "slateblue",
+  "orangered",
+  "darkgreen",
+  "maroon"
+]
